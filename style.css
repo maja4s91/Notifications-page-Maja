@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* GENRAL */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  /* max-width: 144rem;
+  margin: 3.5rem;
+  height: 90vh; */
+  background-color: var(--Very-light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-box {
+  max-width: 50rem;
+  margin: 3.5rem;
+  background-color: var(--White);
+  gap: 2.2rem;
+  padding: 2rem;
+  height: 80vh;
+}
+
+.notification-field {
+  padding: 0.4rem;
+  gap: 1.5rem;
+}
+.notification-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.notifications-info {
+  gap: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.notification-number {
+  color: #fff;
+  font-weight: 700;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--Blue);
+  border-radius: 2px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.read-all {
+  color: var(--Dark-grayish-blue);
+  border: none;
+  background-color: var(--White);
+  font-size: 1rem;
+}
+.img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.img-squer {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: auto;
+}
+
+.note-text {
+  font-size: 1.2rem;
+  gap: 0.4rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.note-message {
+  border: 0.2rem solid var(--Light-grayish-blue-2);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+/* .unread-state {
+
+} */
+
+.unread-nots {
+  background-color: var(--Very-light-grayish-blue);
+
+  /* background-color: blue; */
+}
+
+.read-nots {
+  opacity: 0;
+}
+
+.note-unread {
+  font-size: 2rem;
+  color: var(--Red);
+  /* justify-self: center; */
+}
+
+.mark-tourn {
+  font-weight: 600;
+  color: var(--Dark-grayish-blue);
+}
+
+.username {
+  font-weight: 700;
+  color: var(--Very-dark-blue);
+}
+.chess {
+  color: var(--Blue);
+}
